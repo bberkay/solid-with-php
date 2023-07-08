@@ -13,3 +13,17 @@
 /**
  * Bad Example
  */
+class Shape
+{
+    private string $type; // string
+
+    public function __construct(string $type)
+    {
+        $this->type = $type;
+    }
+
+    public function draw(): void
+    {
+        
+    }
+}

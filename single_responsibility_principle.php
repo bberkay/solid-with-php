@@ -20,18 +20,20 @@
 /**
  * Bad Example
  */
-class ProductInventory
+class BadProductInventory
 {
-    public function addProduct($product)
+    public function addProduct(Object $product): void
     {
         // Add product to inventory
     }
 
-    public function removeProduct($product){
+    public function removeProduct(Object $product): void
+    {
         // Remove product from inventory
     }
 
-    public function generateReports($product){
+    public function generateReports(Object $product): void
+    {
         // Generate reports for product
     }
 }
@@ -41,12 +43,12 @@ class ProductInventory
  */
 class ProductInventory
 {
-    public function addProduct($product)
+    public function addProduct(Object $product): void
     {
         // Add product to inventory
     }
 
-    public function removeProduct($product)
+    public function removeProduct(Object $product): void
     {
         // Remove product from inventory
     }
@@ -54,7 +56,7 @@ class ProductInventory
 
 class ReportGenerator
 {
-    public function generateReports($product)
+    public function generateReports(Object $product): void
     {
         // Generate reports for product
     }
