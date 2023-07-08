@@ -20,7 +20,7 @@
 /**
  * Bad Example
  */
-class BadProductInventory
+class ProductInventory
 {
     public function addProduct(Object $product): void
     {
