@@ -83,10 +83,12 @@ class PhotoCopier implements Printer, Scanner, Copier{
 }
 
 /**
- * The interface segregation principle states that clients should not be forced to
- * implement interfaces they don't use. Instead of one fat interface many small
- * interfaces are preferred based on groups of methods, each one serving one
- * submodule.
+ * In the bad example, the MultiFunctionPrinter class implements all the methods
+ * of the Machine interface, even though it does not need all of them. This is
+ * a violation of the Interface Segregation Principle. The good example shows
+ * how to fix this problem by splitting the Machine interface into three smaller
+ * interfaces: Printer, Scanner, and Copier. Now, the MultiFunctionPrinter class
+ * can implement only the interfaces it needs.
  */
 
 
